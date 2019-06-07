@@ -1,7 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
 const graphqlHTTP = require("express-graphql");
 const mongoose = require("mongoose");
 const { username, password } = require("./key");
